@@ -15,6 +15,12 @@ export const productApi = api.injectEndpoints({
       }),
       providesTags: ["Product"],
     }),
+    getTextById: build.query({
+      query: (id) => ({
+        url: `/api/divantexts/${id}/`,
+      }),
+      providesTags: ["Product"],
+    }),
     SearchProducts: build.query({
       query: (params) => ({
         url: "api/divan-groups/",
@@ -30,4 +36,5 @@ export const {
   useGetProductsQuery,
   useGetProductByIdQuery,
   useSearchProductsQuery,
+  useGetTextByIdQuery,
 } = productApi;

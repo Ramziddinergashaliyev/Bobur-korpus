@@ -7,6 +7,7 @@ const Contact = lazy(() => import("./pages/contact/Contact"));
 const Devon = lazy(() => import("./pages/devon/Devon"));
 const Layout = lazy(() => import("./components/layout/Layout"));
 const Single = lazy(() => import("./pages/single/Single"));
+const Group = lazy(() => import("./pages/group/Group"));
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="devon" element={<Devon />} />
           <Route path="contact" element={<Contact />} />
           <Route path="single/:id" element={<Single />} />
+          <Route path="group/:id" element={<Group />} />
         </Route>
       </Routes>
     </>

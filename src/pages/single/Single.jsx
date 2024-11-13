@@ -13,7 +13,11 @@ const Single = () => {
     <div className="single__cards-item">
       <div className="single__cards-link">
         <img className="single__cards-img" src={img} alt="" />
-        <NavLink className={"single__cards-content"} key={el?.id}>
+        <NavLink
+          to={`/group/${el?.id}`}
+          className={"single__cards-content"}
+          key={el?.id}
+        >
           <button>{el?.name}</button>
         </NavLink>
       </div>

@@ -19,8 +19,8 @@ const Contact = () => {
     e.preventDefault();
     let text = "Buyurtma:%0A";
     text += `FirstName: <b>${formData.fname}</b>%0A`;
-    text += `LastName: <b>${formData.email}</b>%0A%0A`;
-    text += `Email Address: <b>${formData.message}</b>%0A`;
+    text += `Email: <b>${formData.email}</b>%0A%0A`;
+    text += `Message: <b>${formData.message}</b>%0A`;
 
     let url = ` https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${text}&parse_mode=html`;
     console.log("ok");
