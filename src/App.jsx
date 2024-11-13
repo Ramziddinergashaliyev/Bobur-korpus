@@ -5,15 +5,15 @@ const About = lazy(() => import("./pages/about/About"));
 const Blog = lazy(() => import("./pages/blog/Blog"));
 const Contact = lazy(() => import("./pages/contact/Contact"));
 const Devon = lazy(() => import("./pages/devon/Devon"));
-import Layout from "./components/layout/Layout";
-import Single from "./pages/single/Single";
+const Layout = lazy(() => import("./components/layout/Layout"));
+const Single = lazy(() => import("./pages/single/Single"));
 
 const App = () => {
   return (
     <>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} /> {/* Default route for "/" */}
+          <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="blog" element={<Blog />} />
           <Route path="devon" element={<Devon />} />

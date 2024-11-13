@@ -6,16 +6,15 @@ import { NavLink } from "react-router-dom";
 const Devon = () => {
   const { data: products } = useGetProductsQuery();
   console.log(products);
-
   const productData = products?.map((el) => (
-    <div className="devan__card">
+    <div key={el.id} className="devan__card">
       <div className="devan__card__img">
-        <img src={el?.image} alt="" />
+        <img src={el?.image_url} alt="" />
       </div>
       <div className="devan__card__info">
         <p className="devan__card__info-text">{el.name}</p>
       </div>
-      <NavLink key={el.id} to={`/single/${el?.id}`}>
+      <NavLink to={`/single/${el?.id}`}>
         <button className="devan__card__btn">Batafsil</button>
       </NavLink>
     </div>
