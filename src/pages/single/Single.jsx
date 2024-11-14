@@ -26,7 +26,11 @@ const Single = () => {
 
   return (
     <div className="single">
-      <div className="single__cards container">{SingleData}</div>
+      {data && data.groups?.length > 0 ? (
+        <div className="single__cards container">{SingleData}</div>
+      ) : (
+        <h2 className="single__title">Hech qanday malumot topilmadi</h2>
+      )}
     </div>
   );
 };

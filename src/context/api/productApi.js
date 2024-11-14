@@ -23,7 +23,7 @@ export const productApi = api.injectEndpoints({
     }),
     SearchProducts: build.query({
       query: (params) => ({
-        url: "api/divan-groups/",
+        url: "api/search/?q=",
         method: "GET",
         params,
       }),

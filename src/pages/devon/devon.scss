@@ -5,6 +5,10 @@
   background-size: cover;
   min-height: 100vh;
 
+  &__form {
+    padding-top: 100px;
+  }
+
   &__cards {
     padding: 140px 0px 20px;
     display: grid;

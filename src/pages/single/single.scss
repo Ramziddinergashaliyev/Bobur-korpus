@@ -6,6 +6,14 @@
   background-repeat: no-repeat;
   min-height: 100vh;
 
+  &__title {
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    font-weight: 500;
+  }
+
   &__cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
