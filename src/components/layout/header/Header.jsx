@@ -4,6 +4,7 @@ import "./header.scss";
 import rasm from "../../../assets/images/logo.jfif";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseSharp } from "react-icons/io5";
+import Search from "../../search/Search";
 
 const Header = () => {
   const [show, setShow] = useState(false);
@@ -17,6 +18,9 @@ const Header = () => {
           </h2>
         </NavLink>
         <ul className={`header__nav__list ${show ? "header__show" : ""}`}>
+          <li className="header__nav__items">
+            <Search />
+          </li>
           <button onClick={() => setShow(false)} className="header__nav__close">
             <IoCloseSharp />
           </button>

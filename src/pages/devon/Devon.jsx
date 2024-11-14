@@ -23,9 +23,9 @@ const Devon = () => {
 
   return (
     <div className="devan">
-      <div style={{ paddingTop: "100px" }}>
+      {/* <div style={{ paddingTop: "100px" }}>
         <Search />
-      </div>
+      </div> */}
       <div className="devan__cards container">{productData}</div>
     </div>
   );

@@ -1,18 +1,18 @@
 .search {
   background-color: #fff;
-  padding: 15px 20px;
   position: relative;
+  border-radius: 25px;
+  width: 400px;
+  padding: 0px 10px;
 
   &__top {
     form {
       display: flex;
       align-items: center;
       gap: 10px;
-      border: 1px solid gray;
-      padding: 10px;
-      border-radius: 6px;
+      padding: 8px;
       svg {
-        font-size: 20px;
+        font-size: 17px;
       }
     }
     input {
@@ -48,5 +48,10 @@
         margin: 0;
       }
     }
+  }
+}
+@media (max-width: 1500px) {
+  .search {
+    width: 100%;
   }
 }
