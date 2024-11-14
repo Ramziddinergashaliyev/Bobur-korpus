@@ -53,7 +53,7 @@ const Footer = () => {
 
           <li className="footer__item footer__item-user">
             <FaUser />
-            <p>Sanjar Bohodirov</p>
+            <p>Nilufar Muradova</p>
           </li>
           <li className="footer__item footer__item-phone">
             <FaPhone />

@@ -2,6 +2,7 @@ import React from "react";
 import { useGetProductsQuery } from "../../context/api/productApi";
 import "./devon.scss";
 import { NavLink } from "react-router-dom";
+import Search from "../../components/search/Search";
 
 const Devon = () => {
   const { data: products } = useGetProductsQuery();
@@ -22,6 +23,9 @@ const Devon = () => {
 
   return (
     <div className="devan">
+      <div style={{ paddingTop: "100px" }}>
+        <Search />
+      </div>
       <div className="devan__cards container">{productData}</div>
     </div>
   );
