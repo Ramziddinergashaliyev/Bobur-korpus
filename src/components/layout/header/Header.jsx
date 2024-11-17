@@ -35,7 +35,7 @@ const Header = () => {
             </NavLink>
           </li>
           <li className="header__nav__item">
-            <NavLink onClick={() => setShow(false)} to={"/blog"}>
+            <NavLink onClick={() => setShow(false)} to={"/blog/1/"}>
               Boburnoma
             </NavLink>
           </li>

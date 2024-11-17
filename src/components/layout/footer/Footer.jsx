@@ -57,7 +57,7 @@ const Footer = () => {
           </li>
           <li className="footer__item footer__item-phone">
             <FaPhone />
-            <a href="tel: +998935747600">+998935747600</a>
+            <a href="tel: +998935747600">+998937445055</a>
           </li>
           <li className="footer__item footer__item-user">
             <FaTelegram />

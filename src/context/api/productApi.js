@@ -21,6 +21,12 @@ export const productApi = api.injectEndpoints({
       }),
       providesTags: ["Product"],
     }),
+    getBoburnomaId: build.query({
+      query: (id) => ({
+        url: `/api/boburnoma/${id}/`,
+      }),
+      providesTags: ["Product"],
+    }),
     SearchProducts: build.query({
       query: (params) => ({
         url: "api/search/",
@@ -36,4 +42,5 @@ export const {
   useGetProductByIdQuery,
   useSearchProductsQuery,
   useGetTextByIdQuery,
+  useGetBoburnomaIdQuery,
 } = productApi;
